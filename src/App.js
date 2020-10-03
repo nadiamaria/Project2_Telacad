@@ -24,7 +24,6 @@ function App() {
         <Route path="/terms-and-conditions" component={TermsAndConditions}/>
         <Route path="/category/:categoryName" component={Category}/>
         <Route path="/product/:productId" component={Product}/>
-        /terms-and-conditions
         <Route path="*" component={Page404}/>
       </Switch>
     </div>

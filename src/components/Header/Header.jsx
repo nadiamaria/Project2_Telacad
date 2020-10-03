@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo.jpg';
 import {ReactComponent as ShoppingCart} from '../../assets/icons/shopping-cart.svg';
 import {ReactComponent as Heart} from '../../assets/icons/heart.svg';
 import './Header.css';

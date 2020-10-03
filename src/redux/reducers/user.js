@@ -13,8 +13,8 @@ export function userReducer(state = initialState, action) {
         case 'UPDATE_USER_DATA':
             return Object.assign({}, state, {
                 data: action.payload,
-                loading: null,
-                error: false
+                loading: false,
+                error: null
             });
         case 'UPDATE_USER_ERROR':
             return Object.assign({}, state, {

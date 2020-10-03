@@ -1,6 +1,6 @@
 header .logo_shop {
     width: 150px;
-    height: auto;
+    height: 50px;
 }
 
 header .logout:hover {
@@ -11,4 +11,8 @@ header .logout:hover {
 .inima {
     width:30px;
     height: 30px;
+}
+
+.logo {
+    margin-top: 0px !important;
 }
