@@ -1,14 +1,13 @@
 const initialState = {
     products: []
 }
-
-export function cartReducer(state = initialState, action) {
+export function favoriteReducer(state = initialState, action) {
     switch (action.type) {
-        case 'ADD_TO_CART':
-            let productInCart = false;
+        case 'ADD_TO_FAVORITE':
+            let productInFavorite = false;
             const updatedProducts = state.products.map(product => {
                 if (product.id === action.payload.product.id) {
-                    productInCart = true;
+                    productInFavorite = true;
                     return {
                         ...product,
                         quantity: product.quantity + 1
@@ -17,8 +16,7 @@ export function cartReducer(state = initialState, action) {
                     return product;
                 }
             })
-
-            if (!productInCart) {
+            if (!productInFavorite) {
                 return Object.assign({}, state, {
                     products: [
                         ...state.products,
@@ -33,7 +31,7 @@ export function cartReducer(state = initialState, action) {
                     products: updatedProducts
                 });
             }
-        case 'REMOVE_FROM_CART':
+            case 'REMOVE_FROM_FAVORITE':
             const filteredProducts = state.products.filter(product => {
                 return product.id !== action.payload.id
             });

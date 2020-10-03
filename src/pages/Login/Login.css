@@ -8,7 +8,20 @@
     align-items: center;
 }
 
-.login-page img {
+.logo {
     margin-top: 20vh;
-    width: 200px;
+    width: 400px;
+}
+
+.login-page__button {
+    width: 510px;
+    height: 70px;
+}   
+
+.text {
+    padding-left: 115px;
+}
+
+.image_facebook{
+    margin-left: 100px;
 }

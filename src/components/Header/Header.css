@@ -1,4 +1,4 @@
-header .logo {
+header .logo_shop {
     width: 150px;
     height: auto;
 }
@@ -6,4 +6,9 @@ header .logo {
 header .logout:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.inima {
+    width:30px;
+    height: 30px;
 }
