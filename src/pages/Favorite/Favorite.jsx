@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "./../../components/Layout/Layout";
 import { connect } from "react-redux";
-import { removeFromFavorite } from "../../redux/actions/favorites";
-import { addToCart } from "../../redux/actions/cart";
+import { removeFromFavorite } from "../../redux/favorites/FavoritesActions";
+import { addToCart } from "../../redux/cart/CartActions";
 import { Link } from "react-router-dom";
 import { ReactComponent as Close } from "../../assets/icons/close.svg";
 

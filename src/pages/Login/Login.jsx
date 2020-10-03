@@ -6,7 +6,7 @@ import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
 
 import './Login.css'
 import { connect } from 'react-redux';
-import { loginUserGoogle, loginUserFacebook } from '../../redux/actions/user';
+import { loginUserGoogle, loginUserFacebook } from '../../redux/user/UserActions';
 
 class Login extends React.Component {
 

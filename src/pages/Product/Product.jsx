@@ -3,9 +3,9 @@ import Layout from '../../components/Layout/Layout';
 import products from '../../utils/products.json';
 import './Product.css';
 import {connect} from 'react-redux';
-import {addToCart} from '../../redux/actions/cart';
-import {addToFavorite} from "../../redux/actions/favorites";
-import {removeFromFavorite} from "../../redux/actions/favorites";
+import {addToCart} from '../../redux/cart/CartActions';
+import {addToFavorite} from "../../redux/favorites/FavoritesActions";
+import {removeFromFavorite} from "../../redux/favorites/FavoritesActions";
 import { ReactComponent as Heart } from '../../assets/icons/heart.svg';
 import { ReactComponent as HeartEmpty } from '../../assets/icons/heart-outlined.svg';
 

@@ -2,9 +2,9 @@ import React from 'react';
 import './ProductItem.css';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {addToFavorite} from "../../redux/actions/favorites";
-import {removeFromFavorite} from "../../redux/actions/favorites";
-import {addToCart} from "../../redux/actions/cart";
+import {addToFavorite} from "../../redux/favorites/FavoritesActions";
+import {removeFromFavorite} from "../../redux/favorites/FavoritesActions";
+import {addToCart} from "../../redux/cart/CartActions";
 import { ReactComponent as Heart } from '../../assets/icons/heart.svg';
 import { ReactComponent as HeartEmpty } from '../../assets/icons/heart-outlined.svg';
 
