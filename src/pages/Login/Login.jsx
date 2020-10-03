@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo.jpg';
 import { ReactComponent as Google } from '../../assets/icons/google.svg';
+import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
+
 import './Login.css'
 import { connect } from 'react-redux';
 import { loginUserGoogle, loginUserFacebook } from '../../redux/actions/user';
@@ -18,7 +20,7 @@ class Login extends React.Component {
         return(
             <div className="login-page">
                 <Link to='/'>
-                    <img src={Logo} alt="logo" className="mb-5"/>
+                    <img src={Logo} alt="logo" className="mb-5 logo"/>
                 </Link>
 
                 <h1 className="h2">Login</h1>
@@ -33,10 +35,10 @@ class Login extends React.Component {
                 </button>
 
                 <button
-                    className="btn btn-outline-dark d-flex align-items-center"
+                    className="btn btn-outline-dark d-flex align-items-center new"
                     onClick={() => this.props.signInWithFacebook()}
                 >
-                    <Google className="w-50 mr-3"/>
+                    <Facebook className="mr-5 facebook"/>
                     <span className="text-nowrap">Loghează-te cu Facebook</span>
                 </button>
             </div>

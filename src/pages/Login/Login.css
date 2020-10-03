@@ -9,8 +9,18 @@
 }
 
 .logo {
-    margin-top: 20vh;
-    width: 400px;
+    margin-top: 20px;
+    width: 600px;
+    height: 200px;
+}
+
+.facebook {
+    height: 45px;
+    width: 254px !important;
+}
+
+.new {
+    margin-top: 20px;
 }
 
 .login-page__button {

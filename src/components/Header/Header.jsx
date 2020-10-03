@@ -45,6 +45,7 @@ function Header(props) {
 function mapStateToProps(state) {
     return {
         numberOfProducts: state.cart.products.length,
+        numberOfFavoriteProducts: state.favorite.products.length,
         user: state.user.data
     }
 }
