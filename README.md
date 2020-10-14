@@ -12,7 +12,7 @@ You can access the project through the following link: https://nadia-new-shop.he
 3. npm install (may last)
 4. npm start
 
-###Features:
+### Features:
 
 * Click on any category - it will list the corresponding products
 * Click on the "Add to cart" button of each product (either from the category page or from the product page) - the product will be added to the cart. The corresponding icon is updated if the product does not already exist in the cart
